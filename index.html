@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="icon" type="image/x-icon" href="./icon.jpg">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <nav>
+        <h1>
+            Monk Quiz
+        </h1>
+        
+    </nav>
+    <main>
+        <div class="quiz-box">
+            <h3 id="questext">Question lorem30</h3>
+            <br>
+            <hr>
+            <ul class="list">
+                <li class="option" >
+                    <input type="radio" name="answer" id="opa" class="ans">
+                    <label for="opa" id="a-text">answer</label>
+                </li>
+                <li class="option" >
+                    <input type="radio" name="answer" id="opb" class="ans">
+                    <label for="opb" id="b-text">answer</label>
+                </li>
+                <li class="option" >
+                    <input type="radio" name="answer" id="opc" class="ans">
+                    <label for="opc" id="c-text">answer</label>
+                </li>
+                <li class="option" >
+                    <input type="radio" name="answer" id="opd" class="ans">
+                    <label for="opd" id="d-text">answer</label>
+                </li>
+            </ul>
+            <div class="btn-box">
+                <button id="next" onclick="nextQ()">Next</button>
+                <!-- <button id="submit" class="show" onclick="chngBox()">Submit</button> -->
+            </div>
+        </div>
+
+        <div class="result show">
+            <h3>Your Score is...</h3>
+            <p id="score">score</p>
+        </div>
+        
+    </main>
+</body>
+<script src="./app.js" type="text/javascript"></script>
+</html>
